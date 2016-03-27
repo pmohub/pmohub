@@ -1,0 +1,21 @@
+a2KuZZQmBCN5a3pBGYjSaTjzLWg
+1FV5Fot6glCV8nGSySzDicFzsQY
+
+
+C:\Users\Administrator>keytool -exportcert -alias mysentencemaster -keystore d:\Documents\dev\src\unity\App\MySentence\MySentence\key\keystore.keystore -list -v
+키 저장소 비밀번호 입력:
+별칭 이름: mysentencemaster
+생성 날짜: 2015. 6. 23
+항목 유형: PrivateKeyEntry
+인증서 체인 길이: 1
+인증서[1]:
+소유자: O=EdulandSoft
+발행자: O=EdulandSoft
+일련 번호: 21f4c91b
+적합한 시작 날짜: Tue Jun 23 16:28:51 KST 2015, 종료 날짜: Wed Jun 10 16:28:51 KST 2065
+인증서 지문:
+         MD5: 26:F9:D1:A3:4D:BC:F2:87:C3:25:2C:91:F8:59:F6:FD
+         SHA1: C7:DE:1C:6B:C0:AA:83:B0:1A:0F:8C:A5:F2:D9:DC:45:AA:37:DF:C0
+         SHA256: E1:BD:CB:54:57:9B:2C:D4:F9:06:43:54:62:7E:F7:BE:CF:5E:07:E3:8A:BC:D9:D9:6C:51:34:3B:5B:CD:DC:40
+         서명 알고리즘 이름: SHA1withRSA
+         버전: 3

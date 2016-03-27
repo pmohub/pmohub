@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9f4f3">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7c6fba7c"
+        android:id="@+id/topLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:id="@+id/optionLayout">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:id="@+id/optionBtn"
+                android:src="@drawable/option36x36" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:layout_gravity="left"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/registLayout">
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="신규"
+                android:id="@+id/registBtn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="left|center"
+            android:id="@+id/modifyLayout">
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="변경"
+                android:id="@+id/modifyBtn" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topLayout"
+        android:gravity="center"
+        android:id="@+id/mainLayout"
+        android:longClickable="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:id="@+id/learnCntLayout">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="#cd5f5f"
+                android:id="@+id/todayLearnCntText"
+                android:editable="true"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:id="@+id/mySentenceLayout"
+            android:background="#fdfbfb">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/mySentenceEdit"
+                android:background="#fdfbfb"
+                android:autoText="false"
+                android:layout_weight="4"
+                android:editable="true"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:id="@+id/tranSentenceLayout">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tranSentenceEdit"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:editable="true" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/dicLayout"
+                android:gravity="right">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/dicBtn"
+                    android:src="@drawable/dic" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:id="@+id/nextLayout">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다음"
+                android:id="@+id/nextBtn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#dcc8c8"
+            android:id="@+id/adLayout">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
